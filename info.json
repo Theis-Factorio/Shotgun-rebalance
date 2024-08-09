@@ -1,6 +1,6 @@
 {
     "name": "shotgun-rebalance",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"title": "Shotgun rebalance",
 	"description": "Rebalancing the shotguns by making them available earlier and generally stronger. \n\nEnables the shotgun from the start and moves the piercing shotgun shells from military 4 to 2. \nAdds extra shotgun damage and shotgun shooting speed upgrades to military 4.",
 	"author": "Theis",
