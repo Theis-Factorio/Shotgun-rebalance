@@ -1,0 +1,14 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+Date: 2024-08-09
+  Changes:
+    - Mod beginning
+    - Changed shotgun movement_slow_down_factor from 0.6 to 0.5
+    - Changed combat shotgun movement_slow_down_factor from 0.5 to 0.3
+    - Moved shotgun from military 1 to enabled by default
+    - Changed shotgun shell magazine size from 10 to 8
+    - Moved piercing shotgun shells from military 4 to military 2
+    - Added shotgun shooting speed +10% to military 4
+    - Added shotgun shooting damage +10% to military 4
+    - Added optional mod Uranium Shotgun Shell
+    - Tweaked Uranium Shotgun Shell +1 piercing-shotgun-shell to recipe, +4 magazine_size, +6 damage per pellet.
