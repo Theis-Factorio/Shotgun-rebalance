@@ -5,7 +5,9 @@ data.raw.recipe["shotgun-shell"].enabled = true
 --Decrease magazine size of shotgun shells 
 data.raw.ammo["shotgun-shell"].magazine_size = 8
 
+data.raw.character.character.running_speed = -0.01
 --Decrease movement_slow_down_factor for shotguns
+data.raw.gun["pistol"].attack_parameters.movement_slow_down_factor = -50 --was 0.6
 data.raw.gun["shotgun"].attack_parameters.movement_slow_down_factor = 0.5 --was 0.6
 data.raw.gun["combat-shotgun"].attack_parameters.movement_slow_down_factor = 0.3 --was 0.5
 
