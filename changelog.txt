@@ -1,7 +1,19 @@
 ---------------------------------------------------------------------------------------------------
-Version: 0.1.2
-Date: ????
+Version: 2.0.0
+Date: 2024-11-24
   Changes:
+    - Updated to Factorio version 2.0
+    - Rebalanced piercing shotgun shells to better match Wubes rebalance of shotgun shells
+  Balancing:
+    - Reduced the shotgun shell magazine size from 8 to 6, vanilla is 10
+    - Reduced normal shotgun movement penalty duration to 30 ticks instead of the normal 60 ticks. So now the duration is equal between combat shotgun and normal shotgun
+    - Removed the reduction to normal shotgun movement penalty, making it the vanilla value of 0.6, it was 0.5
+    - Increased the combat shotgun movement penalty factor to 0.4, it was 0.3. Vanilla has it at 0.5
+    - Increased the damage of shotgun piercing pellets from 8 to 10. Since normal shotgun pellets now deal 8 damage in vanilla
+    - Increased the range of shotgun piercing pellets to 17 tiles, vanilla is 15 tiles
+    - Added piercing power to shotgun piercing pellets, making them actual piercing rounds 
+    - Increased the shotgun damage bonus optained from researching military 4 from 0.1 to 0.2
+    - Increased the shotgun shooting speed bonus optained from researching military 4 from 0.1 to 0.2
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.1
 Date: 2024-08-09
