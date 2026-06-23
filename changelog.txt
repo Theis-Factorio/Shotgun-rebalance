@@ -1,7 +1,16 @@
 ---------------------------------------------------------------------------------------------------
 Version: 2.1.1
-Date: ????
+Date: 2026-06-23
   Changes:
+    - Added optional dependency on tungsten-shells by DrMoo.
+    - Aligned the bonus of tungsten shells to be similar to uranium shells.
+    - Made tungsten shells the endgame shotgun shell when both tungsten and uranium shells are available.
+  Balancing:
+    - Tungsten shells cost 2 piercing shells instead of 1.
+    - Tungsten shells have 14 magazine size from 10.
+    - Tungsten shells stack size is reduced from 200 to 100.
+    - Tungsten shells max range increased from 20 to 21.
+    - Tungsten shells pellet damage increased from 12 to 18.
 ---------------------------------------------------------------------------------------------------
 Version: 2.1.0
 Date: 2026-06-23
