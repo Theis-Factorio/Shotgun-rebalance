@@ -2,8 +2,8 @@
     "name": "shotgun-rebalance",
 	"version": "2.1.2",
 	"title": "Shotgun rebalance",
-	"description": "Rebalancing the shotguns by making them available earlier and generally stronger.\nEnables the shotgun from the start and moves the piercing shotgun shells from military 4 to 2.",
+	"description": "Rebalancing the shotguns by making them available earlier.\nEnables the shotgun from the start, moves the combat shot to military 3 and moves the piercing shotgun shells from military 2.",
 	"author": "Theis",
-	"factorio_version": "2.0",
-	"dependencies": ["? UraniumShotgunShell", "? tungsten-shells", "base >= 2.0.19"]
+	"factorio_version": "2.1",
+	"dependencies": ["? UraniumShotgunShell > 1.3.1", "? tungsten-shells > 0.2.6", "base >= 2.1.7"]
 }

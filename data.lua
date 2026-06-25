@@ -5,36 +5,35 @@ data.raw.recipe["shotgun-shell"].enabled = true
 --Decrease magazine size of shotgun shells 
 data.raw.ammo["shotgun-shell"].magazine_size = 6
 
---Decrease movement_slow_down_factor for shotguns
---data.raw.gun["pistol"].attack_parameters.movement_slow_down_factor = 0.1 --was 0.2
+--Decrease movement_slow_down_factor for shotguns - removed in 2.1 so wube agreed
 --data.raw.gun["shotgun"].attack_parameters.movement_slow_down_factor = 0.4 --was 0.6
-data.raw.gun["shotgun"].attack_parameters.movement_slow_down_cooldown = 30 -- was default 60 ticks 
-data.raw.gun["combat-shotgun"].attack_parameters.movement_slow_down_factor = 0.4 --was 0.5
+--data.raw.gun["shotgun"].attack_parameters.movement_slow_down_cooldown = 30 -- was default 60 ticks 
+--data.raw.gun["combat-shotgun"].attack_parameters.movement_slow_down_factor = 0.4 --was 0.5
 
-data.raw.projectile["piercing-shotgun-pellet"].action.action_delivery.target_effects.damage.amount = 12 -- was 8, however normal shotgun pellets are 8
 data.raw.projectile["piercing-shotgun-pellet"].piercing_damage = 50 -- new
-data.raw.ammo["piercing-shotgun-shell"].ammo_type.action[2].action_delivery.max_range = 17 -- Was 15, the same as normal shotgun pellets
+
+--error(serpent.block(data.raw.technology["military"].effects))
+
+local function remove_tech_effect(at, what)
+    for id, effect in pairs(data.raw.technology[at].effects) do
+        if effect.recipe == what then
+            table.remove( data.raw.technology[at].effects, id )
+        end
+    end
+end
 
 --Remove shotgun unlocked from by military 1
-data.raw.technology["military"].effects =
-{
-    { type = "unlock-recipe", recipe = "submachine-gun" }
-}
+remove_tech_effect("military", "shotgun")
+remove_tech_effect("military", "shotgun-shell")
 
 --Move piercing-shotgun-shell to military 2
-data.raw.technology["military-2"].effects =
-{
-    { type = "unlock-recipe", recipe = "piercing-rounds-magazine" },
-    { type = "unlock-recipe", recipe = "grenade" },
-    { type = "unlock-recipe", recipe = "piercing-shotgun-shell" }, -- new
-}
+table.insert(data.raw.technology["military-2"].effects, { type = "unlock-recipe", recipe = "piercing-shotgun-shell" })
+remove_tech_effect("military-3", "piercing-shotgun-shell")
 
---Ignore military 3
+--Move combat shotgun to military 3
+table.insert(data.raw.technology["military-3"].effects, { type = "unlock-recipe", recipe = "combat-shotgun" })
+remove_tech_effect("military-4", "combat-shotgun")
 
---Remove piercing-shotgun-shell from military 4 and add small damage and firing speed boost
-data.raw.technology["military-4"].effects =
-{
-    { type = "unlock-recipe", recipe = "cluster-grenade" },
-    { type = "gun-speed", ammo_category = "shotgun-shell", modifier = 0.2 }, -- new
-    { type = "ammo-damage", ammo_category = "shotgun-shell", modifier = 0.2 }, -- new
-}
+--Add bonus damage and shooting speed to shotguns with military 4
+table.insert(data.raw.technology["military-4"].effects, { type = "gun-speed", ammo_category = "shotgun-shell", modifier = 0.2 })
+table.insert(data.raw.technology["military-4"].effects, { type = "ammo-damage", ammo_category = "shotgun-shell", modifier = 0.2 })

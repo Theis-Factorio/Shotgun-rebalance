@@ -22,7 +22,6 @@ then
     data.raw.ammo["uranium-shotgun-shell"].weight = 40*kg -- was default
 
     data.raw.ammo["uranium-shotgun-shell"].ammo_type.action[2].action_delivery.direction_deviation = 0.4 -- was 0.3
-    data.raw.ammo["uranium-shotgun-shell"].ammo_type.action[2].action_delivery.max_range = 21 -- was 18
 
     data.raw.projectile["uranium-shotgun-pellet"].action.action_delivery.target_effects.damage.amount = 18 --was 12
     data.raw.projectile["uranium-shotgun-pellet"].piercing_damage = 150 -- new
@@ -42,10 +41,8 @@ then
     data.raw.ammo["tungsten-shotgun-shell"].stack_size = 100 --was 200
     data.raw.ammo["tungsten-shotgun-shell"].weight = 40*kg -- was default
 
-    --data.raw.ammo["tungsten-shotgun-shell"].ammo_type.action[2].action_delivery.direction_deviation = 0.4 -- was 0.5
-    data.raw.ammo["tungsten-shotgun-shell"].ammo_type.action[2].action_delivery.max_range = 21 -- was 20
 
-    data.raw.projectile["tungsten-shotgun-pellet"].action.action_delivery.target_effects.damage.amount = 18 --was 12
+    --data.raw.projectile["tungsten-shotgun-pellet"].action.action_delivery.target_effects.damage.amount = 18 --was 12
     data.raw.projectile["tungsten-shotgun-pellet"].piercing_damage = 150 -- was 12
 
     data.raw.ammo["tungsten-shotgun-shell"].order = "b[shotgun]-d[tungsten]" -- was "b[shotgun]-c[tungsten]"
@@ -64,6 +61,5 @@ then
     data.raw.ammo["tungsten-shotgun-shell"].magazine_size = 20 --was 14
     data.raw.ammo["tungsten-shotgun-shell"].weight = 80*kg -- was 40kg
     data.raw.ammo["tungsten-shotgun-shell"].ammo_type.action[2].repeat_count = 30 -- was 20
-    data.raw.ammo["tungsten-shotgun-shell"].ammo_type.action[2].action_delivery.max_range = 24 -- was 21
-    data.raw.projectile["tungsten-shotgun-pellet"].action.action_delivery.target_effects.damage.amount = 24 --was 18
+    --data.raw.projectile["tungsten-shotgun-pellet"].action.action_delivery.target_effects.damage.amount = 24 --was 18
 end
