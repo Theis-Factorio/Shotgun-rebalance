@@ -21,9 +21,9 @@ then
     data.raw.ammo["uranium-shotgun-shell"].stack_size = 100 --was 200
     data.raw.ammo["uranium-shotgun-shell"].weight = 40*kg -- was default
 
-    data.raw.ammo["uranium-shotgun-shell"].ammo_type.action[2].action_delivery.direction_deviation = 0.4 -- was 0.3
+    --data.raw.ammo["uranium-shotgun-shell"].ammo_type.action[2].action_delivery.direction_deviation = 0.4 -- was 0.3
 
-    data.raw.projectile["uranium-shotgun-pellet"].action.action_delivery.target_effects.damage.amount = 18 --was 12
+    --data.raw.projectile["uranium-shotgun-pellet"].action.action_delivery.target_effects.damage.amount = 18 --was 12
     data.raw.projectile["uranium-shotgun-pellet"].piercing_damage = 150 -- new
 end
 

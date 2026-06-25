@@ -1,7 +1,13 @@
 ---------------------------------------------------------------------------------------------------
 Version: 2.1.2
-Date: ????
+Date: 2028-06-25
   Changes:
+    - Upgrade to factorio version 2.1
+    - Removed range overrides which no longer works
+    - Removed slow down override of the shotgun as that is now vanilla
+    - Modified the code to play nicer with other mods
+    - Set dependency to base 2.1 as this mod no longer works in 2.0
+    - Set optional dependencies to above their current version, as they are not yet upgraded to 2.1
 ---------------------------------------------------------------------------------------------------
 Version: 2.1.1
 Date: 2026-06-23

@@ -1,18 +1,8 @@
---Enable shotgun without tech
-data.raw.recipe["shotgun"].enabled = true
-data.raw.recipe["shotgun-shell"].enabled = true
-
 --Decrease magazine size of shotgun shells 
-data.raw.ammo["shotgun-shell"].magazine_size = 6
+data.raw.ammo["shotgun-shell"].magazine_size = 6 -- was 10
 
---Decrease movement_slow_down_factor for shotguns - removed in 2.1 so wube agreed
---data.raw.gun["shotgun"].attack_parameters.movement_slow_down_factor = 0.4 --was 0.6
---data.raw.gun["shotgun"].attack_parameters.movement_slow_down_cooldown = 30 -- was default 60 ticks 
---data.raw.gun["combat-shotgun"].attack_parameters.movement_slow_down_factor = 0.4 --was 0.5
-
+-- Add piercing to piercing shotgun shells
 data.raw.projectile["piercing-shotgun-pellet"].piercing_damage = 50 -- new
-
---error(serpent.block(data.raw.technology["military"].effects))
 
 local function remove_tech_effect(at, what)
     for id, effect in pairs(data.raw.technology[at].effects) do
@@ -21,6 +11,10 @@ local function remove_tech_effect(at, what)
         end
     end
 end
+
+--Enable shotgun without tech
+data.raw.recipe["shotgun"].enabled = true
+data.raw.recipe["shotgun-shell"].enabled = true
 
 --Remove shotgun unlocked from by military 1
 remove_tech_effect("military", "shotgun")
