@@ -1,6 +1,6 @@
 {
     "name": "shotgun-rebalance",
-	"version": "2.1.2",
+	"version": "2.1.3",
 	"title": "Shotgun rebalance",
 	"description": "Rebalancing the shotguns by making them available earlier.\nEnables the shotgun from the start, moves the combat shot to military 3 and moves the piercing shotgun shells from military 2.",
 	"author": "Theis",
