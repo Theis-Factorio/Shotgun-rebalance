@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 2.1.2
-Date: 2028-06-25
+Date: 2026-06-25
   Changes:
     - Upgrade to factorio version 2.1
     - Removed range overrides which no longer works
